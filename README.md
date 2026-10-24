@@ -62,3 +62,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 > **ملاحظة هامّة للتشغيل:**
 > يرجى فك ضغط ملف `public.zip` واستخراج محتوياته داخل مجلد باسم `public` في الجذر الرئيسي للمشروع لضمان عمل السيرفر المحلي بشكل صحيح.
+
+
+إعداد قاعدة البيانات:
+يرجى إنشاء قاعدة بيانات MySQL باسم المشروع، ثم استيراد ملف database/zoom.sql للحصول على البيانات كاملة.
