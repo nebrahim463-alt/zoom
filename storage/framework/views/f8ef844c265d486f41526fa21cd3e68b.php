@@ -1,0 +1,51 @@
+
+
+<?php $__env->startSection('content'); ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 m-auto">
+                <h5 class="text-center mt-5 pt-5"><?php echo e(__('language.Details Of One Record')); ?>
+
+                    <span class="badge text-bg-primary">1</span>
+                </h5>
+                <table class="table table-dark text-center">
+                    <thead>
+                        <tr>
+                            <th><?php echo e(__('language.ID')); ?>
+
+                            </th>
+                            <th><?php echo e(__('language.Name')); ?>
+
+                            </th>
+                            <th><?php echo e(__('language.Email')); ?>
+
+                            </th>
+                            <th><?php echo e(__('language.created_at')); ?></th>
+                            <th><?php echo e(__('language.Operations')); ?>
+
+
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo e($result->id); ?></td>
+                            <td><?php echo e($result->name); ?></td>
+                            <td><?php echo e($result->email); ?></td>
+                            <td><?php echo e($result->created_at); ?></td>
+
+                            <td>
+                                <a class="btn btn-success" href=<?php echo e(route('home')); ?>>
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\laravel\zoom\resources\views/user/show.blade.php ENDPATH**/ ?>
